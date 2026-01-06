@@ -9,7 +9,6 @@ function PLEntryForm({ onAdd }) {
   const handleSubmit = (e) => {
     e.preventDefault()
     if (!date || !pnl) {
-      alert('Please fill in date and P&L amount')
       return
     }
 
@@ -20,7 +19,6 @@ function PLEntryForm({ onAdd }) {
     setNotes('')
     setDate(new Date().toISOString().split('T')[0])
     
-    alert('Entry added successfully!')
   }
 
   return (
